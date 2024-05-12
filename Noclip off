@@ -7,7 +7,7 @@ function noclip()
 		if Clip == true and game.Players.LocalPlayer.Character ~= nil then
 			for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 				if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
-					v.CanCollide = true
+					v.CanCollide = false
 				end
 			end
 		end
