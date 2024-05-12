@@ -2,12 +2,12 @@ local Noclip = nil
 local Clip = nil
 
 function noclip()
-	Clip = true
+	Clip = false
 	local function Nocl()
-		if Clip == true and game.Players.LocalPlayer.Character ~= nil then
+		if Clip == false and game.Players.LocalPlayer.Character ~= nil then
 			for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 				if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
-					v.CanCollide = false
+					v.CanCollide = true
 				end
 			end
 		end
