@@ -1,8 +1,8 @@
-local Noclip = false
-local Clip = true
+local Noclip = nil
+local Clip = nil
 
 function noclip()
-	Clip = false
+	Clip = true
 	local function Nocl()
 		if Clip == true and game.Players.LocalPlayer.Character ~= nil then
 			for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
@@ -21,4 +21,4 @@ function clip()
 	Clip = true
 end
 
-clip() -- to toggle noclip() and clip()
+noclip() -- to toggle noclip() and clip()
