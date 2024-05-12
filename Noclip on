@@ -1,5 +1,5 @@
-local Noclip = nil
-local Clip = nil
+local Noclip = true
+local Clip = false
 
 function noclip()
 	Clip = false
